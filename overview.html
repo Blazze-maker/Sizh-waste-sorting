@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - SiZH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wave-container">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <header class="header">
+        <div class="header-inner container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L4 8v16l12 6 12-6V8L16 2z" fill="currentColor" opacity="0.8"/>
+                        <path d="M16 6L8 10v12l8 4 8-4V10l-8-4z" fill="currentColor" opacity="0.4"/>
+                        <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="logo-text">SiZH</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="overview.html" class="nav-link active" data-page="overview">产品概述</a>
+                <a href="features.html" class="nav-link" data-page="features">核心功能</a>
+                <a href="modes.html" class="nav-link" data-page="modes">运行模式</a>
+                <a href="architecture.html" class="nav-link" data-page="architecture">系统架构</a>
+                <a href="components.html" class="nav-link" data-page="components">各单元功能</a>
+                    <a href="contact.html" class="nav-link" data-page="contact">联系我们</a>
+            </nav>
+            <div class="header-actions">
+                <button class="lang-btn" id="langToggle">EN</button>
+                <button class="hamburger" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-video">
+        <div class="video-background">
+            <video controls playsinline poster="images/video-cover.jpg" id="heroVideo">
+                <source src="images/robot-video.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight" data-i18n="hero.title">智能垃圾分类</span>
+                <br><span data-i18n="hero.titleSub">存储机器人</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">基于AI视觉识别与物联网技术的智能垃圾分类解决方案</p>
+            <p class="hero-desc" data-i18n="hero.desc">采用不同的传感器来开发的能与用户进行交互的小型自动化系统，为两年的课程学习提供一个展现创新能力和工程实践能力的平台。</p>
+            <div class="hero-actions">
+                <a href="features.html" class="btn-primary" data-i18n="hero.startBtn">了解更多 →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section overview-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Overview</span>
+                <h2 class="section-title" data-i18n="overview.title">产品概述</h2>
+                <p class="section-subtitle" data-i18n="overview.subtitle">智能垃圾分拣存储机器人系统介绍</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3 data-i18n="overview.bgTitle">① 项目背景</h3>
+                    <p data-i18n="overview.bg1">本项目是电子信息与通信工程专业微控制系统课程设计实训项目，旨在综合展示两年所学计算机、嵌入式软件、数字技术专业能力，锻炼系统集成与工程实践能力。</p>
+                    <p data-i18n="overview.bg2">当下智慧城市环保建设需求迫切，传统垃圾桶无智能分类、无人机交互、无余量监测、清运全靠人工，效率低、管理滞后。</p>
+                    <p data-i18n="overview.bg3">依托嵌入式、FPGA、传感器、物联网等技术，开发自动化智能垃圾分类设备，同时对接全国大学生嵌入式芯片与系统设计竞赛，兼顾教学实训、工程能力培养与学科竞赛。</p>
+                    <p data-i18n="overview.bg4">项目采用小组团队模式，践行项目管理流程，培养产品设计、跨技术融合、团队协作与问题解决能力，遵循实验室安全规范与项目考核体系开展研发。</p>
+                    
+                    <h3 data-i18n="overview.goalTitle">② 核心目标</h3>
+                    <h4 data-i18n="overview.teaching">教学目标</h4>
+                    <p data-i18n="overview.teaching1">深入理解电子产品设计流程与规范，掌握多技术融合复杂问题的解决方法。</p>
+                    <p data-i18n="overview.teaching2">锤炼系统集成、硬件开发、软件编程、项目管理、团队协作综合能力。</p>
+                    <p data-i18n="overview.teaching3">按时间节点完成各模块验收、文档编制、专利模拟申请、宣传网站及视频制作，参与嵌入式大赛评级。</p>
+                    
+                    <h4 data-i18n="overview.product">产品目标</h4>
+                    <p data-i18n="overview.product1">设计并制造可人机交互的智能垃圾分类存储机器人，实现无人干预全自动运行。</p>
+                    <p data-i18n="overview.product2">依靠颜色识别自动判别垃圾类型，完成精准分类与自动存储。</p>
+                    <p data-i18n="overview.product3">实现人体距离检测，保障用户与机器保持≥10cm 安全距离。</p>
+                    <p data-i18n="overview.product4">具备操作、维护双工作模式，满足日常运行与工程师调试需求。</p>
+                    <p data-i18n="overview.product5">搭载 L610 物联网模块，支持手机端实时查看垃圾桶余量，满载自动向物业中心告警。</p>
+                    <p data-i18n="overview.product6">支持中英双语语音引导、LCD 状态显示，实现完整人机交互体验。</p>
+                    
+                    <h3 data-i18n="overview.techTitle">③ 技术融合</h3>
+                    <p data-i18n="overview.tech1">融合嵌入式、数字逻辑、传感器、自动控制、物联网、人机交互、移动端上位机、机械结构、项目管理多领域技术：</p>
+                    <ul>
+                        <li data-i18n="overview.tech.embed"><strong>嵌入式技术：</strong>STM32F411 MCU 主控开发、串口通信、板间数据交互</li>
+                        <li data-i18n="overview.tech.digital"><strong>数字系统技术：</strong>FPGA 并行数据处理、电机驱动、传感器数据解析</li>
+                        <li data-i18n="overview.tech.sensor"><strong>传感检测技术：</strong>颜色传感器、测距传感器信号采集与算法识别</li>
+                        <li data-i18n="overview.tech.control"><strong>自动控制技术：</strong>伺服电机精准运动控制、机械分拣执行</li>
+                        <li data-i18n="overview.tech.iot"><strong>物联网通信：</strong>L610 4G/LTE 双向通信、云端数据上传与告警推送</li>
+                        <li data-i18n="overview.tech.hmi"><strong>人机交互技术：</strong>LCD 显示、LED 状态指示、中英双语语音播报</li>
+                        <li data-i18n="overview.tech.software"><strong>软件与上位机：</strong>Android 上位机 GUI 开发、网页设计、宣传网站搭建</li>
+                        <li data-i18n="overview.tech.manage"><strong>工程管理技术：</strong>WBS 工作分解、项目计划、会议纪要、团队互评、专利文书设计</li>
+                    </ul>
+                </div>
+                <div class="overview-visual">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label" data-i18n="overview.stat1">分类存储仓</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">10cm</span>
+                            <span class="stat-label" data-i18n="overview.stat2">安全距离</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">L610</span>
+                            <span class="stat-label" data-i18n="overview.stat3">通信模组</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">24h</span>
+                            <span class="stat-label" data-i18n="overview.stat4">实时监控</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span class="logo-text">SiZH</span>
+                        <span data-i18n="footer.product">智能垃圾分类存储机器人</span>
+                    </div>
+                    <p>2026 SiZH. <span data-i18n="footer.rights">保留所有权利。</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.course">课程设计 - 微控带控制系统项目设计 | 电子信息与通信工程专业实验中心</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
